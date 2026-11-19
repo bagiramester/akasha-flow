@@ -383,3 +383,9 @@ tbody tr:hover{background:#F7F4FB}
 .draw-next{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:8px;color:var(--text);animation:fadeIn .8s var(--ease)}
 .draw-next[hidden]{display:none}
 @media (max-width:640px){.m-cta{display:flex}}
+.price-cards{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.price-card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px 26px 18px;display:flex;flex-direction:column;gap:6px;transition:transform .3s var(--ease),box-shadow .3s var(--ease)}
+.price-card:hover{transform:translateY(-2px);box-shadow:0 24px 44px -30px rgba(27,20,48,.45)}
+.price-card h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;line-height:1.1}
+.price-card .plist{margin-top:4px;max-width:none}
+.price-card .plist li:last-child{border-bottom:0}
